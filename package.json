@@ -1,0 +1,32 @@
+{
+  "name": "@nuware/lenses",
+  "version": "0.1.0",
+  "description": "Lenses",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuware/lenses.git"
+  },
+  "author": "Dmitry Dudin <dima@nuware.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nuware/lenses/issues"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "@nuware/functions": "^0.1.3"
+  }
+}
