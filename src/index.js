@@ -2,12 +2,13 @@ import {
   K,
   prop,
   assoc,
-  compose
+  compose,
+  freeze
 } from '@nuware/functions'
 
 // Functors
-const Identity = value => ({ join: () => value, map: (fn) => Identity(fn(value)) })
-const Constant = value => ({ join: () => value, map: () => Constant(value) })
+const Identity = value => freeze({ join: () => value, map: (fn) => Identity(fn(value)) })
+const Constant = value => freeze({ join: () => value, map: () => Constant(value) })
 
 // Lenses
 const Lens = (get, set) => (fn) => (x) => fn(get(x || {})).map((a) => set(a)(x))

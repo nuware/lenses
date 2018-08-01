@@ -2,9 +2,9 @@
   "name": "@nuware/lenses",
   "version": "0.1.2",
   "description": "Lenses",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "lint": "eslint --fix index.js"
+    "lint": "eslint src/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,12 +21,13 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-standard": "^3.1.0",
+    "rollup": "^0.63.4"
+  },
+  "dependencies": {
+    "@nuware/functions": "^0.1.4"
   },
   "eslintConfig": {
     "extends": "standard"
-  },
-  "dependencies": {
-    "@nuware/functions": "^0.1.3"
   }
 }
