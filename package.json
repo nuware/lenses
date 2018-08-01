@@ -35,7 +35,7 @@
     "rollup": "^0.63.4"
   },
   "dependencies": {
-    "@nuware/functions": "^0.1.6"
+    "@nuware/functions": "^0.1.7"
   },
   "eslintConfig": {
     "extends": "standard",
