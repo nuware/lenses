@@ -39,7 +39,7 @@ const NameLens = Prop('name')
 
 const a = Set(NameLens)('Value')({})                      // {name: 'Value'}
 const b = Get(NameLens)(a)                                // Value
-const c = Over(NameLens)((val) => val.toLowerCase()))(a)  // value
+const c = Over(NameLens)((val) => val.toLowerCase()))(a)  // {name: 'value'}
 ```
 
 ## Authors
