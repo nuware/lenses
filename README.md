@@ -9,7 +9,8 @@ npm install @nuware/lenses --save
 or
 
 ```html
-<script src="https://unpkg.com/@nuware/lenses@latest/dist/index.js"></script>
+<script defer src="https://unpkg.com/@nuware/functions@latest/dist/index.js"></script>
+<script defer src="https://unpkg.com/@nuware/lenses@latest/dist/index.js"></script>
 ```
 
 ## Usage
