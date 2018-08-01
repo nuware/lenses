@@ -1,6 +1,6 @@
 {
   "name": "@nuware/lenses",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Lenses",
   "main": "dist/index.js",
   "module": "es/index.js",
