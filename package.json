@@ -2,21 +2,18 @@
   "name": "@nuware/lenses",
   "version": "0.1.4",
   "description": "Lenses",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "module": "es/index.js",
   "files": [
     "dist",
-    "lib",
-    "es",
-    "src"
+    "es"
   ],
   "scripts": {
-    "clean": "rimraf lib dist es",
+    "clean": "rimraf dist es",
     "lint": "eslint src/index.js",
     "build:es": "rollup -f esm -i src/index.js -o es/index.js -e @nuware/functions",
     "build:umd": "rollup -f umd -i src/index.js -o dist/index.js -n L -g @nuware/functions:F",
-    "build:cjs": "rollup -f cjs -i src/index.js -o lib/index.js -e @nuware/functions",
-    "build": "npm run build:es && npm run build:umd && npm run build:cjs",
+    "build": "npm run build:es && npm run build:umd",
     "release": "npm run clean && npm run lint && npm run build"
   },
   "repository": {
@@ -38,7 +35,7 @@
     "rollup": "^0.63.4"
   },
   "dependencies": {
-    "@nuware/functions": "^0.1.4"
+    "@nuware/functions": "^0.1.6"
   },
   "eslintConfig": {
     "extends": "standard",
