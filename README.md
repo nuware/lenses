@@ -9,8 +9,13 @@ npm install @nuware/lenses --save
 or
 
 ```html
-<script defer src="https://unpkg.com/@nuware/functions@latest/dist/index.js"></script>
-<script defer src="https://unpkg.com/@nuware/lenses@latest/dist/index.js"></script>
+<script defer src="https://unpkg.com/@nuware/lenses@latest/dist/lenses.umd.js"></script>
+```
+
+or
+
+```html
+<script defer src="https://unpkg.com/@nuware/lenses@latest/dist/lenses.min.js"></script>
 ```
 
 ## Usage
@@ -18,7 +23,7 @@ or
 Browser
 
 ```javascript
-const { Prop, Get, Set, Over } = window.L
+const { Prop, Get, Set, Over } = window.nuware.L
 ```
 
 Node
