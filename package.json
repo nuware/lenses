@@ -1,6 +1,6 @@
 {
   "name": "@nuware/lenses",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Lenses",
   "main": "dist/lenses.umd.js",
   "module": "dist/lenses.esm.js",
