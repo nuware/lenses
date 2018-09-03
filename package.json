@@ -2,6 +2,11 @@
   "name": "@nuware/lenses",
   "version": "0.1.8",
   "description": "Lenses",
+  "keywords": [
+    "lens",
+    "lenses",
+    "functional"
+  ],
   "main": "dist/lenses.umd.js",
   "module": "dist/lenses.esm.js",
   "files": [
