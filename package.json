@@ -1,6 +1,6 @@
 {
   "name": "@nuware/lenses",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Functional Lenses",
   "keywords": [
     "lens",
