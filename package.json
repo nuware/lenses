@@ -1,14 +1,16 @@
 {
   "name": "@nuware/lenses",
   "version": "0.1.12",
-  "description": "Lenses",
+  "description": "Functional Lenses",
   "keywords": [
     "lens",
     "lenses",
     "functional"
   ],
-  "main": "dist/lenses.umd.js",
+  "main": "dist/lenses.cjs.js",
   "module": "dist/lenses.esm.js",
+  "browser": "dist/lenses.umd.js",
+  "minimized": "dist/lenses.umd.min.js",
   "files": [
     "dist"
   ],
@@ -28,18 +30,19 @@
     "url": "https://github.com/nuware/lenses/issues"
   },
   "devDependencies": {
-    "eslint": "^5.6.1",
+    "eslint": "^5.8.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "rollup": "^0.66.5",
-    "rollup-plugin-minify-es": "^1.1.1",
-    "rollup-plugin-node-resolve": "^3.4.0"
+    "rollup": "^0.67.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0"
   },
   "dependencies": {
-    "@nuware/functions": "^0.1.16"
+    "@nuware/functions": "^0.1.18"
   },
   "eslintConfig": {
     "extends": "standard",
